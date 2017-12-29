@@ -1,0 +1,15 @@
+$cWidthD: 1445px;
+$cWidthM: 100%;
+
+$paddingXM: 20px;
+$paddingXD: 50px;
+
+.container {
+  //box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  width: $cWidthM;
+
+  @include bp('min','lg'){
+    width: $cWidthD;
+  }
+}

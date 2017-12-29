@@ -1,0 +1,12 @@
+.top-bar {
+  align-items: center;
+  background-color: $blue;
+  display: flex;
+  height: 85px;
+  padding: 0px $paddingXM;
+  max-width: $cWidthM;
+
+  @include bp('min','lg'){
+    padding: 0px $paddingXD;
+  }
+}

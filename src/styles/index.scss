@@ -1,5 +1,15 @@
-$body-color: blue;
+// Global Imports
+@import "globals/breakpoints";
+@import "globals/colors";
+@import "globals/normalize";
+@import "globals/spacing";
+
+// Module Imports
+@import "modules/brands";
+@import "modules/hero";
+@import "modules/top-bar";
 
 body {
-  color: $body-color;
-}  
+  background-color: $white;
+  font-family: 'Lato', sans-serif;
+}
