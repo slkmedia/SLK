@@ -4,6 +4,7 @@ const Path = require('path');
 const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractSASS = new ExtractTextPlugin('styles/bundle.[hash].css');
 
 module.exports = (options) => {
@@ -24,6 +25,9 @@ module.exports = (options) => {
           NODE_ENV: JSON.stringify(options.isProduction ? 'production' : 'development')
         }
       }),
+      new CopyWebpackPlugin([
+        { from: 'src/img', to: 'img' },
+      ]),
       new HtmlWebpackPlugin({
         template: './src/index.html',
         minify: options.isProduction && {
