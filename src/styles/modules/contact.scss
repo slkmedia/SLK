@@ -46,8 +46,8 @@
     width: 90%;
 
     @include bp('min','lg'){
-      margin-right: 2vw;
-      width: 89%;
+      margin-right: 30px;
+      width: calc(100% - 80px);
     }
   }
 
