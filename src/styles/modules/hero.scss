@@ -36,7 +36,7 @@
     font-size: 30px;
     line-height: 35px;
     max-width: 380px;
-    padding-left: 0px;
+    padding-left: 30px;
     padding-right: 20px;
     padding-top: 30px;
     position: relative;
@@ -44,6 +44,7 @@
     @include bp('min','lg'){
       font-size: 36px;
       line-height: 45px;
+      padding-left: 0px;
       transform: translatex(-45px);
     }
     
@@ -52,7 +53,7 @@
       animation: line 1s;
       background-color: $green;
       height: 5px;
-      left: 0;
+      left: 30px;
       position: absolute;
       top: 0;
       width: 70px;
