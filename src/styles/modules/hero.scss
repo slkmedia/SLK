@@ -16,6 +16,7 @@
 
     @include bp('min','lg'){
       flex: 0 1 50%;
+      transform: translateX(-$paddingXD);
     }
   }
 
@@ -35,7 +36,7 @@
     font-size: 30px;
     line-height: 35px;
     max-width: 380px;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 20px;
     padding-top: 30px;
     position: relative;
@@ -51,13 +52,13 @@
       animation: line 1s;
       background-color: $green;
       height: 5px;
-      left: 20px;
+      left: 0;
       position: absolute;
       top: 0;
       width: 70px;
 
       @include bp('min','lg'){
-        left: 20px;
+        left: 0;
       }
     }
   }
@@ -71,7 +72,7 @@
       background-color: $blue;
       animation: about-box 0.8s;
       box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-      transform: translateX(-40px);
+      transform: translateX(-$paddingXD);
     }
 
     h2 {
@@ -99,7 +100,7 @@
     box-shadow: 0 1px 20px rgba(0,0,0,0.5);
   }
   100% {
-    transform: translateX(-40px);
+    transform: translateX(-$paddingXD);
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
 }

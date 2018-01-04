@@ -1,0 +1,11 @@
+.footer {
+  background-color: $blue;
+  color: $white;
+  font-size: 18px;
+  padding: 20px $paddingXM;
+
+  @include bp('min','md'){
+    padding: 25px $paddingXD;
+    margin-top: -30px;
+  }
+}

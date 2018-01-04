@@ -1,5 +1,5 @@
-$heightD: 450px;
-$heightT: calc(180px * 4);
+$heightD: 513px;
+$heightT: calc(250px * 4);
 $heightM: calc(370px * 4);
 
 .brands {
@@ -27,7 +27,7 @@ $heightM: calc(370px * 4);
     z-index: -2;
 
     @include bp('min','md'){
-      height: $heightT
+      height: $heightT;
     }
 
     @include bp('min','lg'){
@@ -40,6 +40,11 @@ $heightM: calc(370px * 4);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: calc(100% - 60px);
+    
+    @include bp('min','lg'){
+      width: calc(100% - 100px);
+    }
   }
 
   &__item {
@@ -47,13 +52,19 @@ $heightM: calc(370px * 4);
     background-color: $gray;
     display: flex;
     flex-direction: column;
-    height: 280px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
     margin: 0;
-    width: 250px;
+    width: calc(100% - 60px);
+
+    @include bp('min','lg'){
+      padding-bottom: 0px;
+      width: calc(25% - 60px);
+      height: 280px;
+    }
 
     &:nth-child(even){
       background-color: $lightGray;
@@ -88,7 +99,7 @@ $heightM: calc(370px * 4);
 
   &__desc {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     margin-top: 15px;
   }
 }
