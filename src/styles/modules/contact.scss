@@ -69,7 +69,7 @@
     }
 
     &:focus {
-      background-color: darken($color: $blue, $amount: 10);
+      background-color: darken($color: $gray, $amount: 10);
       outline: none;
     }
   }
