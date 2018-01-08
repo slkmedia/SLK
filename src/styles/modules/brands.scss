@@ -81,6 +81,20 @@ $heightM: calc(370px * 4);
     }
   }
 
+  &__link {
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    transform: translateX(-30px);
+    width: 100%;
+    z-index: 5;
+
+    // IE10 Fix
+    background-color: white;
+    opacity: 0;
+  }
+
   &__tagline {
     font-size: 20px;
     padding-top: 20px;
